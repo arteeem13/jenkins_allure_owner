@@ -6,9 +6,7 @@ import java.io.File;
 import java.util.Random;
 
 public class TestData {
-
     // статичные данные
-
     public static String firstName = "Artem";
     public static String lastName = "Andreev";
     public static String userEmail = "artem@mail.com";
@@ -19,9 +17,7 @@ public class TestData {
     public static String city = "Delhi";
 
     // рандомные данные
-
     static Faker faker = new Faker();
-
     public static String
             randFirstName = faker.name().firstName(),
             randLastName = faker.name().lastName(),
