@@ -4,6 +4,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.andreev.pages.StudentRegistrationPage.*;
@@ -14,6 +15,7 @@ import static com.andreev.tests.TestData.*;
 public class StudentRegistrationFormTest extends TestBase {
 
     @Test
+    @Tag("properties")
     @DisplayName("Data in pop-up window matches with data from Student Registration Form in CHROME")
     void checkFillingFieldsInPopupChrome() {
         SelenideLogger.addListener("allure", new AllureSelenide());
