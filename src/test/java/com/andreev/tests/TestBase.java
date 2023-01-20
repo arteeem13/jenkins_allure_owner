@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
     private static String browserName = System.getProperty("browser", "chrome");
-    private static String browserSize = System.getProperty("browserSize", "900х500");
+    private static String browserSize = System.getProperty("browserSize", "1920x1080");
 
         @BeforeAll
         public static void beforeAllTests(){
