@@ -4,10 +4,6 @@ plugins {
     id "io.freefair.lombok" version "6.5.1"
 }
 
-description 'Test task for ProjectName'
-group 'com.simbirsoft/yourName'
-version '1.0-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
@@ -58,7 +54,8 @@ dependencies {
             "com.github.javafaker:javafaker:1.0.2",
             "org.jsoup:jsoup:1.13.1",
             "us.codecraft:xsoup:0.3.2",
-            "org.awaitility:awaitility:4.1.1")
+            "org.awaitility:awaitility:4.1.1",
+            "org.slf4j:slf4j-simple:2.0.6")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 

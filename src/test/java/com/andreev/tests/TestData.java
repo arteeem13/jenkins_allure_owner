@@ -12,7 +12,7 @@ public class TestData {
     public static String userEmail = "artem@mail.com";
     public static String userPhoneNumber = "8919000000";
     public static String currentAddress = "Kazan, Republic of Tatarstan, Russia";
-    public static File photo = new File("src/test/resources/panda.jpg");
+    public static File photo = new File("src/test/resources/img/cat.jpg");
     public static String state = "NCR";
     public static String city = "Delhi";
 

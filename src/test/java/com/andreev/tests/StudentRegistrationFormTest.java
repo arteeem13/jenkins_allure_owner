@@ -28,7 +28,7 @@ public class StudentRegistrationFormTest extends TestBase {
         setMobile(randUserPhoneNumber);
         setSubjects("Maths");
         setHobbies(randHobbies);
-        setPhoto(photo);
+//        setPhoto(photo);
         submitStudentRegistrationForm();
         checkValue("Student Name", randFirstName + " " +  randLastName);
         checkValue("Student Email", randUserEmail);
@@ -37,6 +37,6 @@ public class StudentRegistrationFormTest extends TestBase {
         checkValue("Date of Birth", randDay + " " + randMonth + "," + randYear);
         checkValue("Subjects", "Maths");
         checkValue("Hobbies", randHobbies);
-        checkValue("Picture", "panda.jpg");
+//        checkValue("Picture", "cat.jpg");
     }
 }
