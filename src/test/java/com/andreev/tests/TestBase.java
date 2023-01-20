@@ -9,9 +9,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
-    private static final String browserName = System.getProperty("browser", "firefox");
+    private static final String browserName = System.getProperty("browser", "chrome");
     private static final String browserSize = System.getProperty("browserSize", "1920x1080");
-    private static final String browserVersion = System.getProperty("browserVersion", "90");
     private static final String url = System.getProperty("url", "selenoid.autotests.cloud/wd/hub");
     public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
 
@@ -22,7 +21,6 @@ public class TestBase {
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
             Configuration.browser = browserName;
-            Configuration.browserVersion = browserVersion;
             Configuration.browserSize = browserSize;
             Configuration.baseUrl = "https://demoqa.com";
             Configuration.remote = "https://" + credentials.login() + ":" + credentials.password() + "@" + url;
