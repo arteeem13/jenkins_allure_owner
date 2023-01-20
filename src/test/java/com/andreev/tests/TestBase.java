@@ -13,8 +13,7 @@ public class TestBase {
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
-            String valueBrowser = System.getProperty("browser", "firefox");
-            Configuration.browser = valueBrowser;
+            Configuration.browser = System.getProperty("browser", "chrome");
             Configuration.browserSize = "1920x1080";
             Configuration.baseUrl = "https://demoqa.com";
             Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";

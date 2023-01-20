@@ -16,7 +16,7 @@ public class StudentRegistrationFormTest extends TestBase {
 
     @Test
     @Tag("properties")
-    @DisplayName("Data in pop-up window matches with data from Student Registration Form in CHROME")
+    @DisplayName("Data in pop-up window matches with data from Student Registration Form")
     void checkFillingFieldsInPopupChrome() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         openPage();
