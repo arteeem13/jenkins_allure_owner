@@ -27,7 +27,7 @@ public class TestBase {
     public void afterEachTests() {
         Attachments.screenshotAs("Screenshot");
         Attachments.pageSource();
-        Attachments.browserConsoleLogs();
-        Attachments.addVideo();
+//        Attachments.browserConsoleLogs();
+//        Attachments.addVideo();
     }
 }
